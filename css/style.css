@@ -1,9 +1,11 @@
 
 /* COLOR  */
 :root {
+    --gray: #5b5858;
     --light-gray:#f7f7f7;
     --blue:#1b72e8;
-    --dark-blue:#051e34;       
+    --dark-blue:#051e34;
+    --orange: #ff8f00;       
 }
 
 .bg-light-gray {
@@ -29,13 +31,25 @@
 /* -- APP TOOLBAR -- */
 .app-toolbar {
     flex-shrink: 0;
-    background-color: white;
     height: auto;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     background-color: var(--light-gray);
-    padding: 30px;
+    padding: 15px 0px;
+}
+
+
+.search {
+    background-color: lightgray ;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+.icon-gray {
+    color: var(--gray);
+}
+
+.icon-orange {
+    color:var(--orange);
 }
 
 /* -- APP BODY -- */
@@ -83,7 +97,9 @@
 
 
 /* DEBUG */
-
+.debug .container-fluid {
+    border: 1px solid black;
+}
 
 
 /* RESPONSIVE */
