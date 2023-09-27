@@ -63,7 +63,16 @@
                       <span class="icon-gray d-none d-lg-inline-block "><i class="fa-solid fa-list"></i></span>
                       <span class="icon-gray d-none d-lg-inline-block"><i class="fa-solid fa-circle-question"></i></span>
                       <span class="icon-gray d-none d-lg-inline-block"><i class="fa-solid fa-ellipsis-vertical"></i></span>
-                      <span class="icon-orange"><i class="fa-solid fa-bell"></i></span>
+                      <span class="dropdown">
+                        <a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="icon-orange"><i class="fa-solid fa-bell"></i></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Profilo</a></li>
+                          <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+                          <li><a class="dropdown-item" href="#">Logout</a></li>
+                        </ul>
+                      </span>
                     </div>
                   </div>
             </div>
@@ -124,11 +133,11 @@
                             </div>
                             <!-- tag student -->
                             <div class="col-md-4 col-lg-7">
-                                <div class="d-flex align-items-center">
+                                <div class="d-flex align-items-center gap-2">
                                     <h2>Boolean</h2>
                                     <span class="tag-main-header">Piano Blaze</span>
                                 </div>
-                                <div class="d-flex align-items-center">
+                                <div class="d-flex align-items-center gap-2">
                                     <span class="tag-main-header">3 app</span>
                                     <span><i class="fa-solid fa-angles-right"></i></span>
                                     <span class="tag-main-header d-lg-none">
@@ -141,7 +150,7 @@
                             </div>
                             <!-- number student -->
                             <div class="col-md-4 col-lg-3">
-                                <p>Studenti online negli ultimi 30 minuti</p>
+                                <p class="py-1">Studenti online negli ultimi 30 minuti</p>
                                 <p class="fs-1 fw-bold">125</p>
                             </div>
                         </div>
