@@ -52,6 +52,10 @@
     color:var(--orange);
 }
 
+.logo-mobile {
+    width: 35px;
+}
+
 /* -- APP BODY -- */
 .app-body {
     flex-grow: 1;
@@ -97,9 +101,9 @@
 
 
 /* DEBUG */
-.debug .container-fluid {
+/* .debug .container-fluid {
     border: 1px solid black;
-}
+} */
 
 
 /* RESPONSIVE */
