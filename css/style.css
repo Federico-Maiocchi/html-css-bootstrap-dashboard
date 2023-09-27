@@ -1,0 +1,39 @@
+.debug.app {
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background-color: aquamarine;
+    
+    
+}
+
+.app-aside-top {
+    flex-shrink: 0;
+    background-color: white;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: red;
+    padding: 30px;
+}
+
+.app-body {
+    flex-grow: 1;
+    overflow: hidden;
+    background-color: yellow;
+    display: flex;
+}
+
+.app-header {
+    min-width: 50px;
+    flex-shrink: 0;
+    background-color: green;
+}
+
+.app-main {
+    flex-grow: 1;
+    overflow: hidden;
+    background-color: blue;
+}
