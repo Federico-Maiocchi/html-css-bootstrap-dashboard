@@ -1,39 +1,103 @@
-.debug.app {
+
+/* COLOR  */
+:root {
+    --light-gray:#f7f7f7;
+    --blue:#1b72e8;
+    --dark-blue:#051e34;       
+}
+
+.bg-light-gray {
+    background-color: var(--light-gray) ;
+}
+
+.bg-blu {
+    background-color: var(--blue) ;
+}
+
+.bg-dark-blu {
+    background-color: var(--dark-blue) ;
+}
+
+/* -- APP -- */
+.app {
     height: 100vh;
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    background-color: aquamarine;
-    
-    
 }
 
-.app-aside-top {
+/* -- APP TOOLBAR -- */
+.app-toolbar {
     flex-shrink: 0;
     background-color: white;
     height: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: red;
+    background-color: var(--light-gray);
     padding: 30px;
 }
 
+/* -- APP BODY -- */
 .app-body {
     flex-grow: 1;
     overflow: hidden;
-    background-color: yellow;
     display: flex;
 }
 
+/* -- HEADER  -- */
 .app-header {
     min-width: 50px;
     flex-shrink: 0;
-    background-color: green;
+    min-width: 200px;
+    background-color: var(--dark-blue);
+    
 }
 
+/* -- MAIN -- */
 .app-main {
     flex-grow: 1;
     overflow: hidden;
-    background-color: blue;
+    display: flex;
+    flex-direction: column;
 }
+
+/* main header */
+.main-header {
+    padding: 30px;
+    background-color: var(--blue);
+}
+
+
+/* main body */
+.main-body {
+    flex-grow: 1;
+    background-color: var(--light-gray);
+    padding: 30px;
+}
+
+
+
+
+
+
+
+/* DEBUG */
+
+
+
+/* RESPONSIVE */
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {  }
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {  }
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {  }
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  }
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {  }
