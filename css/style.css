@@ -53,7 +53,7 @@
 }
 
 .logo-mobile {
-    width: 35px;
+    width: 45px;
 }
 
 /* -- APP BODY -- */
@@ -101,6 +101,11 @@
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    overflow: auto;
+}
+
+.main-header-container {
+    
 }
 
 /* main header */
