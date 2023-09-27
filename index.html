@@ -15,15 +15,19 @@
         <aside class="app-toolbar">
             <div class="container-fluid bg-white py-1">
                 <div class="row">
+                    <!-- logo big -->
                     <div class="d-none col-lg-2 d-lg-flex justify-content-center">
                       <img src="./img/logo.svg" alt="logo">
                     </div>
+                    <!-- logo mobile table -->
                     <div class="col-1 d-lg-none">
                         <img class="logo-mobile" src="./img/mobile-logo.png" alt="logo mobile">
                     </div>
+                    <!-- search -->
                     <div class="col-auto flex-grow-1">
                       <div class="search"><i class="fa-solid fa-magnifying-glass px-2"></i>Prova a cercare: Lezione di Laravel</div>
                     </div>
+                    <!-- icon toolbar -->
                     <div class="col-1 col-lg-2 d-flex justify-content-end gap-4">
                       <span class="icon-gray d-none d-lg-inline-block "><i class="fa-solid fa-list"></i></span>
                       <span class="icon-gray d-none d-lg-inline-block"><i class="fa-solid fa-circle-question"></i></span>
@@ -36,7 +40,30 @@
         <!-- APP BODY -->
         <div class="app-body">
             <!-- HEADER  -->
-            <header class="app-header"></header>
+            <header class="app-header">
+                <div class="app-header-container text-white">
+                    <div class="row-header">
+                        <ul class="header-flex list-group list-header">
+                            <li class="mb-2">
+                                <i class="fa-solid fa-house"></i>
+                                <span class="d-none d-lg-inline-block">Home</span>
+                            </li>
+                            <li class="mb-2">
+                                <i class="fa-solid fa-chart-simple"></i>
+                                <span class="d-none d-lg-inline-block">Stats</span>
+                            </li>
+                            <li class="mb-2">
+                                <i class="fa-solid fa-signal"></i>
+                                <span class="d-none d-lg-inline-block">Signals</span>
+                            </li>
+                        </ul>
+                        <div>
+                            <i class="fa-solid fa-gear"></i>
+                            <span class="d-none d-lg-inline-block">Admin</span>
+                        </div>
+                    </div>
+                </div>
+            </header>
             <!-- MAIN -->
             <main class="app-main">
                 <!-- main header -->
