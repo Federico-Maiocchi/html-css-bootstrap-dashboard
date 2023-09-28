@@ -74,7 +74,7 @@
 
 .app-header-container {
     height: 100%;
-    
+    width: 100%;
 }
 
 .row-header {
@@ -89,6 +89,10 @@
     list-style: none;
 }
 
+.header-hover:hover {
+    background-color: chartreuse;
+}
+
 
 /* -- MAIN -- */
 .app-main {
@@ -97,7 +101,6 @@
     flex-direction: column;
     overflow: auto;
 }
-
 
 
 /* main header */
@@ -116,8 +119,6 @@
 .body-web .offcanvas {
     width: 100%;
 }
-
-
 
 
 /* main body */
