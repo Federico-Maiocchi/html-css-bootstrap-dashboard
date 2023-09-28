@@ -128,6 +128,10 @@
     padding: 30px;
 }
 
+.img-table {
+    width: 35px;
+}
+
 
 
 
@@ -135,9 +139,10 @@
 
 
 /* DEBUG */
-/* .debug .container-fluid {
+.debug [class^='col-'] {
     border: 1px solid black;
-} */
+    padding: 10px;
+}
 
 
 /* RESPONSIVE */
