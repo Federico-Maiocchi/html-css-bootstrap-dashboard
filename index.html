@@ -19,7 +19,7 @@
         </div>
         <div class="offcanvas-body">
             <!-- form offcanvas -->
-            <form action="">
+            <form>
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-12 mb-3 col-lg-6">
@@ -60,14 +60,14 @@
                         </div>
                         <div class="col-12 mb-3 col-lg-2">
                             <label class="form-label">Cap</label>
-                            <input type="text" class="form-control" id="city">
+                            <input type="text" class="form-control" id="post">
                         </div>
                         <div class="col-12 mb-3">
                             <label class="form-label">Foto</label>
                             <input type="file" class="form-control" id="inputGroupFile02">
                         </div>
                         <div class="mb-3">
-                            <input type="checkbox" name="Acc" id=""> Accetta per proseguire 
+                            <input type="checkbox" name="Acc" > Accetta per proseguire 
                         </div>
                         <div class="d-flex">
                             <span>
@@ -82,8 +82,6 @@
             </form>
         </div>
     </div>
-
-
     <!-- APP -->
     <div class="app">
         <!-- APP TOOLBAR -->
@@ -92,7 +90,7 @@
                 <div class="row align-content-center">
                     <!-- logo big -->
                     <div class="d-none col-lg-2 d-lg-flex justify-content-center">
-                      <img src="./img/logo.svg" alt="logo">
+                        <img src="./img/logo.svg" alt="logo">
                     </div>
                     <!-- logo mobile table -->
                     <div class="col-1 d-lg-none">
@@ -100,25 +98,25 @@
                     </div>
                     <!-- search -->
                     <div class="col-auto flex-grow-1">
-                      <div class="search"><i class="fa-solid fa-magnifying-glass px-2"></i>Prova a cercare: Lezione di Laravel</div>
+                        <div class="search"><i class="fa-solid fa-magnifying-glass px-2"></i>Prova a cercare: Lezione di Laravel</div>
                     </div>
                     <!-- icon toolbar -->
                     <div class="col-1 col-lg-2 d-flex justify-content-end gap-4">
-                      <span class="icon-gray d-none d-lg-inline-block "><i class="fa-solid fa-list"></i></span>
-                      <span class="icon-gray d-none d-lg-inline-block"><i class="fa-solid fa-circle-question"></i></span>
-                      <span class="icon-gray d-none d-lg-inline-block"><i class="fa-solid fa-ellipsis-vertical"></i></span>
-                      <span class="dropdown">
-                        <a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <span class="icon-orange"><i class="fa-solid fa-bell"></i></span>
-                        </a>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">Profilo</a></li>
-                          <li><a class="dropdown-item" href="#">Fatturazione</a></li>
-                          <li><a class="dropdown-item" href="#">Logout</a></li>
-                        </ul>
-                      </span>
+                        <span class="icon-gray d-none d-lg-inline-block "><i class="fa-solid fa-list"></i></span>
+                        <span class="icon-gray d-none d-lg-inline-block"><i class="fa-solid fa-circle-question"></i></span>
+                        <span class="icon-gray d-none d-lg-inline-block"><i class="fa-solid fa-ellipsis-vertical"></i></span>
+                        <div class="dropdown">
+                            <a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="icon-orange"><i class="fa-solid fa-bell"></i></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Profilo</a></li>
+                                <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+                                <li><a class="dropdown-item" href="#">Logout</a></li>
+                            </ul>
+                        </div>
                     </div>
-                  </div>
+                </div>
             </div>
         </aside>
         <!-- APP BODY -->
@@ -213,168 +211,137 @@
                                     </div>
                                     <div class="card-body">
                                         <table class="table table-hover">
+                                            <!-- header table -->
                                             <thead class="fw-normal">
-                                              <tr>
-                                                <td class="width-50" scope="col">Name</th>
-                                                <td class="text-center d-none d-md-table-cell" scope="col">Data inizio</th>
-                                                <td class="text-center d-none d-md-table-cell" scope="col">roi</td>
-                                                <td class="text-center" scope="col">stato</td>
-                                                <td class="text-center" scope="col">Azioni</td>
-                                              </tr>
+                                                <tr>
+                                                    <th class="width-50" scope="col">Name</th>
+                                                    <th class="text-center d-none d-md-table-cell" scope="col">Data inizio</th>
+                                                    <th class="text-center d-none d-md-table-cell" scope="col">roi</th>
+                                                    <th class="text-center" scope="col">stato</th>
+                                                    <th class="text-center" scope="col">Azioni</th>
+                                                </tr>
                                             </thead>
                                             <tbody>
                                                 <!-- 1 row -->
-                                              <tr>
-                                                <td scope="row"><img class="img-table me-2" src="./img/class-avatar.jpg" alt="">Classe 75</td>
-                                                <td class="text-center d-none d-md-table-cell">15 Feb 2021</td>
-                                                <td class="text-center d-none d-md-table-cell">20%</td>
-                                                <td class="text-center"><span class="badge text-bg-success">Done</span></td>
-                                                <td class="text-center">
-                                                    <button class="btn btn-outline-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#added-student" aria-controls="added-student">
-                                                        <a class="text-dark" href="#">
+                                                <tr>
+                                                    <th scope="row"><img class="img-table me-2" src="./img/class-avatar.jpg" alt="">Classe 75</th>
+                                                    <td class="text-center d-none d-md-table-cell">15 Feb 2021</td>
+                                                    <td class="text-center d-none d-md-table-cell">20%</td>
+                                                    <td class="text-center"><span class="badge text-bg-success">Done</span></td>
+                                                    <td class="text-center">
+                                                        <button class="btn btn-outline-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#added-student" aria-controls="added-student">
                                                             <i class="fa-solid fa-pencil"></i>
-                                                        </a>
-                                                    </button>
-                                                    <button class="btn btn-outline-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#added-student" aria-controls="added-student">
-                                                        <a class="text-dark" href="#">
+                                                        </button>
+                                                        <button class="btn btn-outline-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#added-student" aria-controls="added-student">
                                                             <i class="fa-solid fa-trash"></i>
-                                                        </a>
-                                                    </button>
-                                                </td>
-                                              </tr>
-                                              <!-- 2 row -->
-                                              <tr>
-                                                <td scope="row"><img class="img-table me-2" src="./img/class-avatar.jpg" alt="">Classe 76</td>
-                                                <td class="text-center d-none d-md-table-cell">16 Feb 2021</td>
-                                                <td class="text-center d-none d-md-table-cell">20%</td>
-                                                <td class="text-center"><span class="badge text-bg-success">Done</span></td>
-                                                <td class="text-center">
-                                                    <button class="btn btn-outline-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#added-student" aria-controls="added-student">
-                                                        <a class="text-dark" href="#">
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                                <!-- 2 row -->
+                                                <tr>
+                                                    <th scope="row"><img class="img-table me-2" src="./img/class-avatar.jpg" alt="">Classe 76</th>
+                                                    <td class="text-center d-none d-md-table-cell">16 Feb 2021</td>
+                                                    <td class="text-center d-none d-md-table-cell">20%</td>
+                                                    <td class="text-center"><span class="badge text-bg-success">Done</span></td>
+                                                    <td class="text-center">
+                                                        <button class="btn btn-outline-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#added-student" aria-controls="added-student">
                                                             <i class="fa-solid fa-pencil"></i>
-                                                        </a>
-                                                    </button>
-                                                    <button class="btn btn-outline-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#added-student" aria-controls="added-student">
-                                                        <a class="text-dark" href="#">
+                                                        </button>
+                                                        <button class="btn btn-outline-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#added-student" aria-controls="added-student">
                                                             <i class="fa-solid fa-trash"></i>
-                                                        </a>
-                                                    </button>
-                                                </td>
-                                              </tr>
-                                              <!-- 3 row -->
-                                              <tr>
-                                                <td scope="row"><img class="img-table me-2" src="./img/class-avatar.jpg" alt="">Classe 77</td>
-                                                <td class="text-center d-none d-md-table-cell">17 Feb 2021</td>
-                                                <td class="text-center d-none d-md-table-cell">20%</td>
-                                                <td class="text-center"><span class="badge text-bg-warning text-light">Proces</span></td>
-                                                <td class="text-center">
-                                                    <button class="btn btn-outline-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#added-student" aria-controls="added-student">
-                                                        <a class="text-dark" href="#">
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                                <!-- 3 row -->
+                                                <tr>
+                                                    <th scope="row"><img class="img-table me-2" src="./img/class-avatar.jpg" alt="">Classe 77</th>
+                                                    <td class="text-center d-none d-md-table-cell">17 Feb 2021</td>
+                                                    <td class="text-center d-none d-md-table-cell">20%</td>
+                                                    <td class="text-center"><span class="badge text-bg-warning text-light">Proces</span></td>
+                                                    <td class="text-center">
+                                                        <button class="btn btn-outline-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#added-student" aria-controls="added-student">
                                                             <i class="fa-solid fa-pencil"></i>
-                                                        </a>
-                                                    </button>
-                                                    <button class="btn btn-outline-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#added-student" aria-controls="added-student">
-                                                        <a class="text-dark" href="#">
+                                                        </button>
+                                                        <button class="btn btn-outline-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#added-student" aria-controls="added-student">
                                                             <i class="fa-solid fa-trash"></i>
-                                                        </a>
-                                                    </button>
-                                                </td>
-                                              </tr>
-                                              <!-- 4 row -->
-                                              <tr>
-                                                <td scope="row"><img class="img-table me-2" src="./img/class-avatar.jpg" alt="">Classe 75</td>
-                                                <td class="text-center d-none d-md-table-cell">15 Feb 2021</td>
-                                                <td class="text-center d-none d-md-table-cell">20%</td>
-                                                <td class="text-center"><span class="badge text-bg-danger">Failed</span></td>
-                                                <td class="text-center">
-                                                    <button class="btn btn-outline-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#added-student" aria-controls="added-student">
-                                                        <a class="text-dark" href="#">
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                                <!-- 4 row -->
+                                                <tr>
+                                                    <th scope="row"><img class="img-table me-2" src="./img/class-avatar.jpg" alt="">Classe 75</th>
+                                                    <td class="text-center d-none d-md-table-cell">15 Feb 2021</td>
+                                                    <td class="text-center d-none d-md-table-cell">20%</td>
+                                                    <td class="text-center"><span class="badge text-bg-danger">Failed</span></td>
+                                                    <td class="text-center">
+                                                        <button class="btn btn-outline-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#added-student" aria-controls="added-student">
                                                             <i class="fa-solid fa-pencil"></i>
-                                                        </a>
-                                                    </button>
-                                                    <button class="btn btn-outline-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#added-student" aria-controls="added-student">
-                                                        <a class="text-dark" href="#">
+                                                        </button>
+                                                        <button class="btn btn-outline-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#added-student" aria-controls="added-student">
                                                             <i class="fa-solid fa-trash"></i>
-                                                        </a>
-                                                    </button>
-                                                </td>
-                                              </tr>
-                                              <!-- 5 row -->
-                                              <tr>
-                                                <td scope="row"><img class="img-table me-2" src="./img/class-avatar.jpg" alt="">Classe 75</td>
-                                                <td class="text-center d-none d-md-table-cell">15 Feb 2021</td>
-                                                <td class="text-center d-none d-md-table-cell">20%</td>
-                                                <td class="text-center"><span class="badge text-bg-success">Done</span></td>
-                                                <td class="text-center">
-                                                    <button class="btn btn-outline-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#added-student" aria-controls="added-student">
-                                                        <a class="text-dark" href="#">
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                                <!-- 5 row -->
+                                                <tr>
+                                                    <th scope="row"><img class="img-table me-2" src="./img/class-avatar.jpg" alt="">Classe 75</th>
+                                                    <td class="text-center d-none d-md-table-cell">15 Feb 2021</td>
+                                                    <td class="text-center d-none d-md-table-cell">20%</td>
+                                                    <td class="text-center"><span class="badge text-bg-success">Done</span></td>
+                                                    <td class="text-center">
+                                                        <button class="btn btn-outline-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#added-student" aria-controls="added-student">
                                                             <i class="fa-solid fa-pencil"></i>
-                                                        </a>
-                                                    </button>
-                                                    <button class="btn btn-outline-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#added-student" aria-controls="added-student">
-                                                        <a class="text-dark" href="#">
-                                                            <i class="fa-solid fa-trash"></i>
-                                                        </a>
-                                                    </button>
-                                                </td>
-                                              </tr>
-                                              <!-- 6 row -->
-                                              <tr>
-                                                <td scope="row"><img class="img-table me-2" src="./img/class-avatar.jpg" alt="">Classe 75</td>
-                                                <td class="text-center d-none d-md-table-cell">15 Feb 2021</td>
-                                                <td class="text-center d-none d-md-table-cell">20%</td>
-                                                <td class="text-center"><span class="badge text-bg-danger">Failed</span></td>
-                                                <td class="text-center">
-                                                    <button class="btn btn-outline-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#added-student" aria-controls="added-student">
-                                                        <a class="text-dark" href="#">
+                                                        </button>
+                                                        <button class="btn btn-outline-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#added-student" aria-controls="added-student">
+                                                            <i class="fa-solid fa-trash"></i>  
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                                <!-- 6 row -->
+                                                <tr>
+                                                    <th scope="row"><img class="img-table me-2" src="./img/class-avatar.jpg" alt="">Classe 75</th>
+                                                    <td class="text-center d-none d-md-table-cell">15 Feb 2021</td>
+                                                    <td class="text-center d-none d-md-table-cell">20%</td>
+                                                    <td class="text-center"><span class="badge text-bg-danger">Failed</span></td>
+                                                    <td class="text-center">
+                                                        <button class="btn btn-outline-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#added-student" aria-controls="added-student">
                                                             <i class="fa-solid fa-pencil"></i>
-                                                        </a>
-                                                    </button>
-                                                    <button class="btn btn-outline-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#added-student" aria-controls="added-student">
-                                                        <a class="text-dark" href="#">
+                                                        </button>
+                                                        <button class="btn btn-outline-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#added-student" aria-controls="added-student">
                                                             <i class="fa-solid fa-trash"></i>
-                                                        </a>
-                                                    </button>
-                                                </td>
-                                              </tr>
-                                              <!-- 7 row -->
-                                              <tr>
-                                                <td scope="row"><img class="img-table me-2" src="./img/class-avatar.jpg" alt="">Classe 75</td>
-                                                <td class="text-center d-none d-md-table-cell">15 Feb 2021</td>
-                                                <td class="text-center d-none d-md-table-cell">20%</td>
-                                                <td class="text-center"><span class="badge text-bg-success">Done</span></td>
-                                                <td class="text-center">
-                                                    <button class="btn btn-outline-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#added-student" aria-controls="added-student">
-                                                        <a class="text-dark" href="#">
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                                <!-- 7 row -->
+                                                <tr>
+                                                    <th scope="row"><img class="img-table me-2" src="./img/class-avatar.jpg" alt="">Classe 75</th>
+                                                    <td class="text-center d-none d-md-table-cell">15 Feb 2021</td>
+                                                    <td class="text-center d-none d-md-table-cell">20%</td>
+                                                    <td class="text-center"><span class="badge text-bg-success">Done</span></td>
+                                                    <td class="text-center">
+                                                        <button class="btn btn-outline-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#added-student" aria-controls="added-student">
                                                             <i class="fa-solid fa-pencil"></i>
-                                                        </a>
-                                                    </button>
-                                                    <button class="btn btn-outline-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#added-student" aria-controls="added-student">
-                                                        <a class="text-dark" href="#">
+                                                        </button>
+                                                        <button class="btn btn-outline-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#added-student" aria-controls="added-student">
                                                             <i class="fa-solid fa-trash"></i>
-                                                        </a>
-                                                    </button>
-                                                </td>
-                                              </tr>
+                                                        </button>
+                                                    </td>
+                                                </tr>
                                               <!-- 8 row -->
-                                              <tr>
-                                                <td scope="row"><img class="img-table me-2" src="./img/class-avatar.jpg" alt="">Classe 75</td>
-                                                <td class="text-center d-none d-md-table-cell">15 Feb 2021</td>
-                                                <td class="text-center d-none d-md-table-cell">20%</td>
-                                                <td class="text-center"><span class="badge text-bg-success">Success</span></td>
-                                                <td class="text-center">
-                                                    <button class="btn btn-outline-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#added-student" aria-controls="added-student">
-                                                        <a class="text-dark" href="#">
+                                                <tr>
+                                                    <th scope="row"><img class="img-table me-2" src="./img/class-avatar.jpg" alt="">Classe 75</th>
+                                                    <td class="text-center d-none d-md-table-cell">15 Feb 2021</td>
+                                                    <td class="text-center d-none d-md-table-cell">20%</td>
+                                                    <td class="text-center"><span class="badge text-bg-success">Success</span></td>
+                                                    <td class="text-center">
+                                                        <button class="btn btn-outline-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#added-student" aria-controls="added-student">
                                                             <i class="fa-solid fa-pencil"></i>
-                                                        </a>
-                                                    </button>
-                                                    <button class="btn btn-outline-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#added-student" aria-controls="added-student">
-                                                        <a class="text-dark" href="#">
+                                                        </button>
+                                                        <button class="btn btn-outline-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#added-student" aria-controls="added-student">
                                                             <i class="fa-solid fa-trash"></i>
-                                                        </a>
-                                                    </button>
-                                                </td>
-                                              </tr>
+                                                        </button>
+                                                    </td>
+                                                </tr>
                                             </tbody>
                                         </table>
                                     </div>
@@ -382,39 +349,39 @@
                                 <!-- card faq -->
                                 <div class="card">
                                     <div class="card-header">
-                                        <h4>F.A.Q</h4>
+                                    <h4>F.A.Q</h4>
                                     </div>
                                     <div class="card-body">
                                         <div class="accordion accordion-flush" id="accordionFlushExample">
                                             <div class="accordion-item">
-                                              <h2 class="accordion-header">
+                                            <h2 class="accordion-header">
                                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                                                  Come aggiunger un nuovo studente?
+                                                Come aggiunger un nuovo studente?
                                                 </button>
-                                              </h2>
-                                              <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                            </h2>
+                                            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                                                 <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur sint culpa molestiae quaerat aut expedita!</div>
-                                              </div>
+                                            </div>
                                             </div>
                                             <div class="accordion-item">
-                                              <h2 class="accordion-header">
+                                            <h2 class="accordion-header">
                                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                                                  Come posso accedere alle informazioni del mio account?
+                                                Come posso accedere alle informazioni del mio account?
                                                 </button>
-                                              </h2>
-                                              <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                            </h2>
+                                            <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                                                 <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, aliquid.</div>
-                                              </div>
+                                            </div>
                                             </div>
                                             <div class="accordion-item">
-                                              <h2 class="accordion-header">
+                                            <h2 class="accordion-header">
                                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                                                  Posso usare questa dashboard da mobile?
+                                                Posso usare questa dashboard da mobile?
                                                 </button>
-                                              </h2>
-                                              <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                            </h2>
+                                            <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                                                 <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-                                              </div>
+                                            </div>
                                             </div>
                                         </div>
                                     </div>
@@ -425,18 +392,18 @@
                                 <!-- card todo -->
                                 <div class="card mb-4">
                                     <div class="card-header">
-                                        <h4>Todo</h4>
+                                        <h4>To do</h4>
                                     </div>
                                     <div class="card-body">
                                         <ul class="list-group ">
                                             <li class="list-group-item">
-                                                <input type="checkbox" name="new class" id=""> <span>Kickoff nuove classi</span>
+                                                <input type="checkbox" name="new class"> <span>Kickoff nuove classi</span>
                                             </li>
                                             <li class="list-group-item">
-                                                <input type="checkbox" name="new class" id=""> <span>Lezioni su Bootstrap in classe #75</span>
+                                                <input type="checkbox" name="new class"> <span>Lezioni su Bootstrap in classe #75</span>
                                             </li>
                                             <li class="list-group-item">
-                                                <input type="checkbox" name="new class" id=""> <span>Controllare username github studenti</span>
+                                                <input type="checkbox" name="new class"> <span>Controllare username github studenti</span>
                                             </li>
                                         </ul>
                                     </div>
@@ -447,13 +414,13 @@
                                     <div class="card-body">
                                         <h5 class="card-title">Utenti attivi</h5>
                                         <p class="card-text card-font-size">Lista degli utenti attivi negli ultimi mesi</p>
-                                      </div>
-                                      <ul class="list-group list-group-flush">
+                                    </div>
+                                    <ul class="list-group list-group-flush">
                                         <li class="list-group-item card-font-size">Gennaio: 1200</li>
                                         <li class="list-group-item card-font-size">Febbraio: 1300</li>
                                         <li class="list-group-item card-font-size">Marzo: 1600</li>
-                                      </ul>
-                                      <div class="card-body">
+                                    </ul>
+                                    <div class="card-body">
                                         <a href="#" class="card-link card-font-size">Visualizza report approfondito</a>
                                     </div>
                                 </div>
