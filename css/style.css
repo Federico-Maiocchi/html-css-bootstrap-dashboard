@@ -34,7 +34,7 @@
     height: auto;
     display: flex;
     background-color: var(--light-gray);
-    padding: 15px 0px;
+    padding: 5px 0px;
 }
 
 
@@ -93,7 +93,6 @@
 /* -- MAIN -- */
 .app-main {
     flex-grow: 1;
-    overflow: hidden;
     display: flex;
     flex-direction: column;
     overflow: auto;
@@ -125,9 +124,9 @@
 .main-body {
     flex-grow: 1;
     background-color: var(--light-gray);
-    padding: 30px;
 }
 
+/* card next class table */
 .img-table {
     width: 35px;
 }
@@ -136,15 +135,18 @@
     width: 50%;
 }
 
-
+/* card active users */
+.card-font-size {
+    font-size: 13px;
+}
 
 
 
 /* DEBUG */
-.debug [class^='col-'] {
+/* .debug [class^='col-'] {
     border: 1px solid black;
     padding: 10px;
-}
+} */
 
 
 /* RESPONSIVE */

@@ -13,30 +13,74 @@
 
     <div class="offcanvas offcanvas-end " data-bs-scroll="true" tabindex="-1" id="added-student" aria-labelledby="added-student">
         <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Inserisci nuovo studente</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
 
           </button>
         </div>
         <div class="offcanvas-body">
-          <div>
-            Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
-          </div>
-        <div class="dropdown mt-3">
-            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
-              Dropdown button
-            </button>
-            <ul class="dropdown-menu">
-                <li>
-                    <a class="dropdown-item" href="#">Action</a>
-                </li>
-                <li>
-                    <a class="dropdown-item" href="#">Another action</a>
-                </li>
-                <li><a class="dropdown-item" href="#">Something else here</a>
-                </li>
-            </ul>
-          </div>
+            <form action="">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 mb-3 col-lg-6">
+                            <label class="form-label">Nome</label>
+                            <input type="text" class="form-control" id="firstname">
+                        </div>
+                        <div class="col-12 mb-3 col-lg-6">
+                            <label class="form-label">Cognome</label>
+                            <input type="text" class="form-control" id="lastname">
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <label class="form-label">Email</label>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="basic-addon1">@</span>
+                                <input type="text" class="form-control" aria-describedby="basic-addon1">
+                            </div>
+                        </div>
+                        <div class="col-12 mb-3 col-lg-6">
+                            <label class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password">
+                        </div>
+                        <div class="col-12 mb-3">
+                            <label class="form-label">Indirizzo</label>
+                            <input type="text" class="form-control" aria-describedby="basic-addon1">
+                        </div>
+                        <div class="col-12 mb-3 col-lg-7">
+                            <label class="form-label">Città</label>
+                            <input type="text" class="form-control" id="city">
+                        </div>
+                        <div class="col-12 col-lg-3">
+                            <label class="form-label">Stato</label>
+                            <select class="form-select" id="inputGroupSelect01">
+                                <option selected>Seleziona</option>
+                                <option value="1">Mordor</option>
+                                <option value="2">Contea</option>
+                                <option value="3">Gran Burrone</option>
+                            </select>
+                        </div>
+                        <div class="col-12 mb-3 col-lg-2">
+                            <label class="form-label">Cap</label>
+                            <input type="text" class="form-control" id="city">
+                        </div>
+                        <div class="col-12 mb-3">
+                            <label class="form-label">Foto</label>
+                            <input type="file" class="form-control" id="inputGroupFile02">
+                        </div>
+                        <div class="mb-3">
+                            <input type="checkbox" name="Acc" id=""> Accetta per proseguire 
+                        </div>
+                        <div class="d-flex">
+                            <span>
+                                <button type="button " class="btn btn-primary">Salva</button>
+                            </span>
+                            <span class="ms-4">
+                                <button type="button" class="btn btn-warning">Svuota</button>
+                            </span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </form>
         </div>
     </div>
 
@@ -120,7 +164,7 @@
             <!-- MAIN -->
             <main class="debug app-main">
                 <!-- main header -->
-                <div class="main-header">
+                <div class="main-header ">
                     <div class="container-fluid text-white">
                         <div class="row align-items-center">
                             <!-- added student -->
@@ -152,24 +196,24 @@
                             <!-- number student -->
                             <div class="col-md-4 col-lg-3">
                                 <p class="py-1">Studenti online negli ultimi 30 minuti</p>
-                                <p class="fs-1 fw-bold">125</p>
+                                <p class="fs-3 ">125</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <!-- main body -->
-                <div class="main-body">
+                <div class="main-body py-4">
                     <div class="container-fluid">
                         <div class="row">
                             <!-- left cards -->
                             <div class="col-12 col-lg-8">
-                                <!-- table -->
-                                <div class="card">
+                                <!-- card next class table  -->
+                                <div class="card mb-4">
                                     <div class="card-header">
                                         <h4>Prossime classi</h4>
                                     </div>
                                     <div class="card-body">
-                                        <table class="table">
+                                        <table class="table table-hover">
                                             <thead class="fw-normal">
                                               <tr>
                                                 <td class="width-50" scope="col">Name</th>
@@ -336,7 +380,7 @@
                                         </table>
                                     </div>
                                 </div>
-                                <!-- faq -->
+                                <!-- card faq -->
                                 <div class="card">
                                     <div class="card-header">
                                         <h4>F.A.Q</h4>
@@ -378,8 +422,9 @@
                                 </div>
                             </div>
                             <!-- right cards -->
-                            <div class="col-12 col-lg-4">
-                                <div class="card">
+                            <div class="col-12 col-lg-4 ">
+                                <!-- card todo -->
+                                <div class="card mb-4">
                                     <div class="card-header">
                                         <h4>Todo</h4>
                                     </div>
@@ -394,13 +439,25 @@
                                             <li class="list-group-item">
                                                 <input type="checkbox" name="new class" id=""> <span>Controllare username github studenti</span>
                                             </li>
-                                          </ul>
+                                        </ul>
                                     </div>
                                 </div>
+                                <!-- card active users -->
                                 <div class="card">
-
+                                    <img src="./img/stats.jpeg" class="card-img-top" alt="stats">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Utenti attivi</h5>
+                                        <p class="card-text card-font-size">Lista degli utenti attivi negli ultimi mesi</p>
+                                      </div>
+                                      <ul class="list-group list-group-flush">
+                                        <li class="list-group-item card-font-size">Gennaio: 1200</li>
+                                        <li class="list-group-item card-font-size">Febbraio: 1300</li>
+                                        <li class="list-group-item card-font-size">Marzo: 1600</li>
+                                      </ul>
+                                      <div class="card-body">
+                                        <a href="#" class="card-link card-font-size">Visualizza report approfondito</a>
+                                    </div>
                                 </div>
-                                
                             </div>
                         </div>
                     </div>
