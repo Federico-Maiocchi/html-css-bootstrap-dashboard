@@ -53,7 +53,7 @@
 }
 
 .logo-mobile {
-    width: 45px;
+    width: 40px;
 }
 
 /* -- APP BODY -- */
@@ -103,7 +103,6 @@
 
 /* main header */
 .main-header {
-    padding: 5px;
     background-color: var(--blue);
 }
 
@@ -113,6 +112,10 @@
     border-radius: 999px;
     font-size: 12px;
     white-space: nowrap;
+}
+
+.body-web .offcanvas {
+    width: 100%;
 }
 
 
@@ -139,7 +142,12 @@
 
 /* RESPONSIVE */
 /* // Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {  }
+@media (min-width: 576px) { 
+
+    /* .body-web .offcanvas {
+        width: 100%;
+    } */
+ }
 
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {  }
@@ -154,6 +162,11 @@
     .row-header {
         align-items: flex-start;
         padding: 0px 20px;
+    }
+
+    /* main header */
+    .body-web .offcanvas {
+        width: 600px;
     }
 
  }
