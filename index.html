@@ -88,13 +88,13 @@
         <aside class="app-toolbar">
             <div class="container-fluid bg-white py-1">
                 <div class="row align-content-center">
-                    <!-- logo big -->
-                    <div class="d-none col-lg-2 d-lg-flex justify-content-center">
-                        <img src="./img/logo.svg" alt="logo">
-                    </div>
                     <!-- logo mobile table -->
                     <div class="col-1 d-lg-none">
-                        <img class="logo-mobile" src="./img/mobile-logo.png" alt="logo mobile">
+                        <a href="#"><img class="logo-mobile" src="./img/mobile-logo.png" alt="logo mobile"></a>
+                    </div>
+                    <!-- logo big -->
+                    <div class="d-none col-lg-2 d-lg-flex justify-content-center">
+                        <a href="#"><img src="./img/logo.svg" alt="logo"></a>
                     </div>
                     <!-- search -->
                     <div class="col-auto flex-grow-1">
@@ -102,9 +102,9 @@
                     </div>
                     <!-- icon toolbar -->
                     <div class="col-1 col-lg-2 d-flex justify-content-end gap-4">
-                        <span class="icon-gray d-none d-lg-inline-block "><i class="fa-solid fa-list"></i></span>
-                        <span class="icon-gray d-none d-lg-inline-block"><i class="fa-solid fa-circle-question"></i></span>
-                        <span class="icon-gray d-none d-lg-inline-block"><i class="fa-solid fa-ellipsis-vertical"></i></span>
+                        <span class=" d-none d-lg-inline-block "><a class="icon-gray" href="#"><i class="fa-solid fa-list"></i></a></span>
+                        <span class="icon-gray d-none d-lg-inline-block"><a class="icon-gray" href="#"><i class="fa-solid fa-circle-question"></i></a></span>
+                        <span class="icon-gray d-none d-lg-inline-block"><a class="icon-gray" href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a></span>
                         <div class="dropdown">
                             <a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <span class="icon-orange"><i class="fa-solid fa-bell"></i></span>
@@ -151,7 +151,7 @@
                             <a class="text-decoration-none text-light " href="#">
                                 <i class="fa-solid fa-gear"></i>
                             </a>
-                            <span class="d-none d-lg-inline-block">
+                            <span class="d-none ms-2 d-lg-inline-block">
                                 <a class="text-decoration-none text-light " href="#">Admin</a>
                             </span>
                         </div>
@@ -223,8 +223,8 @@
                                             </thead>
                                             <tbody>
                                                 <!-- 1 row -->
-                                                <tr>
-                                                    <th scope="row"><img class="img-table me-2" src="./img/class-avatar.jpg" alt="">Classe 75</th>
+                                                <tr class="p-0">
+                                                    <th scope="row p-0"><img class="img-table me-2" src="./img/class-avatar.jpg" alt="">Classe 75</th>
                                                     <td class="text-center d-none d-md-table-cell">15 Feb 2021</td>
                                                     <td class="text-center d-none d-md-table-cell">20%</td>
                                                     <td class="text-center"><span class="badge text-bg-success">Done</span></td>
@@ -409,21 +409,24 @@
                                     </div>
                                 </div>
                                 <!-- card active users -->
-                                <div class="card">
-                                    <img src="./img/stats.jpeg" class="card-img-top" alt="stats">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Utenti attivi</h5>
-                                        <p class="card-text card-font-size">Lista degli utenti attivi negli ultimi mesi</p>
-                                    </div>
-                                    <ul class="list-group list-group-flush">
-                                        <li class="list-group-item card-font-size">Gennaio: 1200</li>
-                                        <li class="list-group-item card-font-size">Febbraio: 1300</li>
-                                        <li class="list-group-item card-font-size">Marzo: 1600</li>
-                                    </ul>
-                                    <div class="card-body">
-                                        <a href="#" class="card-link card-font-size">Visualizza report approfondito</a>
+                                <div class="card p-2">
+                                    <div class="card">
+                                        <img src="./img/stats.jpeg" class="card-img-top" alt="stats">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Utenti attivi</h5>
+                                            <p class="card-text card-font-size">Lista degli utenti attivi negli ultimi mesi</p>
+                                        </div>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item card-font-size">Gennaio: 1200</li>
+                                            <li class="list-group-item card-font-size">Febbraio: 1300</li>
+                                            <li class="list-group-item card-font-size">Marzo: 1600</li>
+                                        </ul>
+                                        <div class="card-body">
+                                            <a href="#" class="card-link card-font-size">Visualizza report approfondito</a>
+                                        </div>
                                     </div>
                                 </div>
+                                
                             </div>
                         </div>
                     </div>
